@@ -6,6 +6,7 @@ from core.models import Evento
 
 class EventoAdmin(admin.ModelAdmin):
     list_display = ('titulo', 'dataEvento', 'dataCriacao')
-    list_filter = ('titulo', 'dataEvento', )
+    list_filter = ('titulo', 'dataEvento',)
+
 
 admin.site.register(Evento, EventoAdmin)
